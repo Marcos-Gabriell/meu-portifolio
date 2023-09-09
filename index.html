@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Portfólio – Marcos Gabriel </title>
     <link rel="stylesheet" href="style.css"> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link data-minify="1" rel="stylesheet" href="https://blog.thesimplifieddev.com/wp-content/cache/min/1/npm/boxicons@latest/css/boxicons.min.css?ver=1680857252">
 </head>
 <body>
     <!-- NavBar Section-->
     <header>
         <a href="#" class="logo">Port<span>Fólio</span></a>
-        <div class="bx bx-menu" id="menu-icon"></div>
+        <div class="bx bx-menu" id="menu-icon" ></div>
         <ul class="navbar">
             <li><a href="#">Home</a></li>
             <li><a href="#">Sobre</a></li>
@@ -26,15 +28,15 @@
 
     <!-- Home  Section Start-->
       <section class="home"  id="home">
-        <div class="social">
+        <div class="social" data-aos="fade-down-right">
             <a href="https://github.com/Marcos-Gabriell" target="_blank"><i class="bx bxl-github"> </i></a>
             <a href="https://www.instagram.com/marcosgabrielsantos_/" target="_blank"><i class="bx bxl-instagram" ></i></a>
             <a href="https://www.linkedin.com/in/marcos-gabriel-08043b22b/ " target="_blank"><i class="bx bxl-linkedin"> </i></a>
         </div>
-        <div class="home-img">
+        <div class="home-img" data-aos="fade-left">
             <img src="GABRIEL.png" alt="">
         </div>
-        <div class="home-text">
+        <div class="home-text" data-aos="fade-up-right">
             <span>Olá, eu sou</span>
             <h1>Marcos Gabriel</h1>
             <h2>Desenvolvedor de Software</h2>
@@ -46,6 +48,35 @@
         </div>
       </section>
     <!-- Home  Section End-->
+    <!-- Sobre  Section Start-->
+       <section class="about" id="about">
+          <div class="heading">
+            <h2>Sobre Min</h2>
+            <span>Introdução</span>
+          </div>
+          <div class="about-container">
+            <div class="about-img">
+                <img src="GABRIEL.png" alt="">
+            </div>
+              <div class="about-text">
+                <p>Sou um jovem entusiasta da tecnologia, atualmente cursando um curso técnico em desenvolvimento de sistemas. 
+                    Tenho interesse tanto em front-end quanto em back-end, com foco em microservices usando Java e frameworks Spring. 
+                    Além disso, trabalho com HTML, CSS, JavaScript e React no front-end, planejando aprender Angular e TypeScript. 
+                    Estou dedicado a aprimorar minhas habilidades de desenvolvimento back-end com ênfase no Spring Boot, estudando 
+                    também Kubernetes e sistemas de mensageria para comunicação assíncrona entre microservices. Apesar de estar no 
+                    ensino médio aos 16 anos, estou determinado a expandir meus conhecimentos por conta própria, 
+                    visando me tornar um desenvolvedor completo e atualizado com as tendências tecnológicas em constante evolução.</p>
 
+             <div class="information">
+                <div class="info-box">
+                    <i class="bx bxs-user"></i>
+                </div>
+             </div>
+             </div>
+          </div>
+       </section>
+   
+
+       <script  src="script.js"></script>
 </body>
 </html>
