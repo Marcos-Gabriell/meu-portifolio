@@ -193,3 +193,91 @@ header {
     margin-left: 1rem;
 
 }
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 4rem;
+
+}
+
+.skills-img img {
+    width: 80%;
+    padding-left: 4rem;
+    object-position: center;
+}
+
+.bars-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+    margin-bottom: 1rem;
+}
+
+.bars-box h3,span {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.light-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.6rem;
+    background: hsla(260, 100%, 44%, 0.4);
+    border-radius: 0.5rem;
+}
+
+.percent-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.6rem;
+    background: var(--main-color);
+    border-radius: 0.6rem;
+}
+
+.html-bar {
+    width: 95%;
+}
+.CSS-bar {
+    width: 85%;
+}
+.js-bar{
+    width: 85%;
+}
+.react-bar {
+    width: 55%;
+}
+.Bootstrap-bar{
+    width: 75%;
+}
+.Angular-bar {
+    width: 15%;
+}
+.java-bar {
+    width: 65%;
+}
+.Spring-boot-bar {
+    width: 35%;
+}
+.Spring-data-bar {
+    width: 35%;
+}
+
+.docker-bar {
+    width: 45%;
+}
+
+.aws-bar {
+    width: 25%;
+}
+
+.mysql-bar{
+    width: 95%;
+}
