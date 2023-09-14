@@ -45,7 +45,7 @@ body.active {
 }
 
 body.active #darkmode {
-    color: #fff; /* Cor do ícone no modo escuro */
+    color: #000000; /* Cor do ícone no modo escuro */
 }
 
 *::selection {
