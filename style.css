@@ -37,6 +37,9 @@ body.active {
     background: #141414; /* Cor de fundo para o dark mode */
     color: #fff; /* Cor do texto para o dark mode */
 }
+body.active .social a {
+    color: #fff; /* Cor dos ícones no modo escuro */
+}
 
 /* Outros estilos para o dark mode */
 .dark-mode-element {
