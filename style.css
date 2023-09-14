@@ -29,6 +29,8 @@ section {
     font-size: 22px;
     cursor: pointer;
 }
+
+
 body {
     background: var(--bg-color);
     color: var(--text-color);
@@ -41,6 +43,9 @@ body.active .social a {
     color: #fff; /* Cor dos ícones no modo escuro */
 }
 
+body.active .social a:hover {
+    color: var(--main-color); /* Cor dos ícones no modo escuro */
+}
 /* Outros estilos para o dark mode */
 .dark-mode-element {
     background: #ffffff; /* Exemplo de cor de fundo para elementos no dark mode */
@@ -424,26 +429,49 @@ span {
     width: 650px;
 }
 
+/* Estilize as caixas de entrada de texto */
 form input,
 textarea {
-    padding: 15px;
-    border-radius: 0.5rem;
-    width: 100%;
-    border: none;
-    outline: none;
-    background: hsla(147, 41%, 49%, 0.4);
-    margin-bottom: 1rem;
-    color: var(--text-color);
+  padding: 15px;
+  border-radius: 0.5rem;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: hsla(147, 41%, 49%, 0.4);
+  margin-bottom: 1rem;
+  color: #000000; 
 }
+
 
 form input::placeholder,
 textarea::placeholder {
-    color: var(--text-color);
+  color: #000000; 
 }
 
 form textarea {
-    resize: none;
-    height: 200px;
+  color: #000000;
+  resize: none;
+  height: 200px;
+}
+form textarea::placeholder {
+    color: #000000;
+}
+ /* Alteração da cor dos elementos no modo dark */
+body.active form input,
+textarea {
+    color: #fff;
+}
+body.active form input::placeholder,
+textarea::placeholder {
+    color: #fff;
+}
+
+body.active  form textarea {
+    color: #fff;
+}
+
+body.active form textarea::placeholder {
+    color: #fff;
 }
 
 .contact-button {
