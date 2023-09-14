@@ -25,19 +25,27 @@ section {
     padding: 50px 10%;
 }
 
+#darkmode {
+    font-size: 22px;
+    cursor: pointer;
+}
 body {
     background: var(--bg-color);
     color: var(--text-color);
 }
 body.active {
-    background: #000; /* Cor de fundo para o dark mode */
+    background: #141414; /* Cor de fundo para o dark mode */
     color: #fff; /* Cor do texto para o dark mode */
 }
 
 /* Outros estilos para o dark mode */
 .dark-mode-element {
-    background: #222; /* Exemplo de cor de fundo para elementos no dark mode */
+    background: #ffffff; /* Exemplo de cor de fundo para elementos no dark mode */
     color: #ccc; /* Exemplo de cor de texto para elementos no dark mode */
+}
+
+body.active #darkmode {
+    color: #fff; /* Cor do ícone no modo escuro */
 }
 
 *::selection {
