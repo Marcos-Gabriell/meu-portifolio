@@ -285,7 +285,7 @@ body.active .light-bar {
     border-radius: 0.5rem;
 }
 
-.percent-bar {
+body.active .percent-bar {
     position: absolute;
     bottom: 0;
     left: 0;
