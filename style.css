@@ -382,7 +382,6 @@ body.active .percent-bar {
 }
 
 
-
 .services-box h3 {
     font-size: 1rem;
     font-weight: 600;
@@ -394,7 +393,7 @@ body.active .percent-bar {
 }
 
 body.active .services-box h3 {
-    color: var(--main-color);
+    color: rgba(2, 166, 70);
 }
 
 
@@ -406,6 +405,12 @@ body.active .services-box:hover h3 {
     padding-top: 2rem;
     font-size: 54px;
     color: var(--main-color);
+}
+body.active .services-box .bx {
+    color: rgba(2, 166, 70);
+}
+body.active .services-box:hover .bx {
+    color: #ffffff;
 }
 
 .services-box:hover .bx {
@@ -605,7 +610,7 @@ body.active form textarea::placeholder {
         justify-content: center;
     }
     .about-text {
-        margin-right: 30px; /* Ajuste o valor conforme necessário para criar a margem desejada */
+      margin-right: 20px; /* Ajuste o valor conforme necessário para criar a margem desejada */
     }
     .skills-container {
         grid-template-columns: 1fr;
@@ -617,6 +622,9 @@ body.active form textarea::placeholder {
         padding-top: 2rem;
         display: flex;
         justify-content: center;
+    }
+    .bars-box {
+        margin-right: 20px;
     }
     .contact-form form {
         width: 300px;
