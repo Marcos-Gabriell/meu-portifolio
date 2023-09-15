@@ -559,6 +559,9 @@ body.active form textarea::placeholder {
         transition: 0.2s ease;
         text-align: center;
     }
+    .copyright  {
+        font-size: 12px;
+    }
     .navbar.active {
         top: 100%;
     }
