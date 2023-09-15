@@ -359,7 +359,7 @@ body.active .percent-bar {
     text-align: center;
     border-radius: 0.5rem;
     border-bottom: 2px solid var(--main-color);
-    box-shadow: 0 2px 7px rgb(14 55 54 / 15%);
+    box-shadow: 0 2px 7px rgb(14 55 54 / 15%)joo;
     overflow: hidden;
     position: relative;
     z-index: 1; /* Defina um índice Z maior para garantir que o conteúdo fique acima do pseudo-elemento */
@@ -390,7 +390,16 @@ body.active .percent-bar {
 }
 
 .services-box:hover h3 {
-    color: #fff;
+    color: #ffffff;
+}
+
+body.active .services-box h3 {
+    color: var(--main-color);
+}
+
+
+body.active .services-box:hover h3 {
+    color: #ffffff;
 }
 
 .services-box .bx {
@@ -400,7 +409,7 @@ body.active .percent-bar {
 }
 
 .services-box:hover .bx {
-    color: #fff;
+    color: #ffffff;
 }
 
 .loader-container {
@@ -594,6 +603,9 @@ body.active form textarea::placeholder {
     .about-img {
         display: flex;
         justify-content: center;
+    }
+    .about-text {
+        margin-right: 30px; /* Ajuste o valor conforme necessário para criar a margem desejada */
     }
     .skills-container {
         grid-template-columns: 1fr;
