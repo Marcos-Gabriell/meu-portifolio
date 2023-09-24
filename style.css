@@ -90,7 +90,7 @@ header {
 
 .navbar {
     display: flex;
-    transition: transform 0.3s ease-in-out; /* Adiciona uma transição suave à transformação */
+    transition: transform 1s ease-in-out; /* Aumenta a duração da transição para 1 segundo */
     transform: translateX(100%); /* Inicialmente, empurre o menu para fora da tela à direita */
     position: fixed; /* Fixa o menu no lugar para impedir que o conteúdo subjacente seja rolado */
     top: 0;
@@ -105,8 +105,6 @@ header {
   .navbar.active {
     transform: translateX(0); /* Quando a classe 'active' é adicionada, traga o menu da direita para o centro */
   }
-  
-  
   
   
   
@@ -172,6 +170,49 @@ header {
     font-weight: 400;
     margin: 0.7rem 0 1rem;
 }
+/* Animação para o texto */
+.home-text {
+    opacity: 0; /* Começa com opacidade 0 para escondê-lo inicialmente */
+    transform: translateY(20px); /* Move para baixo 20px */
+    animation: slideIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animação para a imagem */
+  .home-img img {
+    opacity: 0; /* Começa com opacidade 0 para escondê-la inicialmente */
+    transform: scale(0.8); /* Inicialmente, escala a imagem para 80% do tamanho original */
+    animation: fadeIn 1s ease-in-out forwards, scaleIn 1s ease-in-out forwards;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes scaleIn {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
 
 .social {
     display: flex;
