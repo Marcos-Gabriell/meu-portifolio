@@ -90,23 +90,10 @@ header {
 
 .navbar {
     display: flex;
-    transition: transform 1s ease-in-out; /* Aumenta a duração da transição para 1 segundo */
-    transform: translateX(100%); /* Inicialmente, empurre o menu para fora da tela à direita */
-    position: fixed; /* Fixa o menu no lugar para impedir que o conteúdo subjacente seja rolado */
-    top: 0;
-    right: 0; /* Alinhe o menu com o lado direito da tela */
-    width: 100%; /* Garante que a largura da navbar ocupe 100% da tela */
-    height: 100%; /* Garante que a altura da navbar ocupe 100% da tela */
-    background-color: white; /* Adicione uma cor de fundo para cobrir o conteúdo subjacente */
-    flex-direction: column; /* Empilha os itens verticalmente */
-    z-index: 1; /* Garante que o menu fique acima de outros elementos na página */
-  }
-  
+}
   .navbar.active {
     transform: translateX(0); /* Quando a classe 'active' é adicionada, traga o menu da direita para o centro */
   }
-  
-  
   
   
 
@@ -227,6 +214,31 @@ header {
 
 .social a:hover {
     color: var(--hover);
+}
+
+/* Defina a animação */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Aplique a animação aos ícones com diferentes atrasos */
+.animated-icon:nth-child(1) {
+    animation: fadeIn 0.5s ease 0s 1 normal forwards;
+}
+
+.animated-icon:nth-child(2) {
+    animation: fadeIn 0.5s ease 0.5s 1 normal forwards;
+}
+
+.animated-icon:nth-child(3) {
+    animation: fadeIn 0.5s ease 1s 1 normal forwards;
 }
 
 .btn {
