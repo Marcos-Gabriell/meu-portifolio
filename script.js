@@ -4,11 +4,9 @@ let navbar = document.querySelector(".navbar");
 
 // Adicione um evento de clique ao ícone do menu
 menu.addEventListener("click", () => {
-  navbar.classList.toggle("active"); // Alternar a classe 'active' no menu
-  toggleMenuIcon(); // Chamar a função para alternar o ícone do menu
+  navbar.classList.toggle("active"); // Alternar a classe 'active' na navbar
+  toggleMenuIcon();
 });
-
-
 function toggleMenuIcon() {
   if (menu.classList.contains("bx-menu")) {
     menu.classList.remove("bx-menu");
