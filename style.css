@@ -302,6 +302,8 @@ header {
     margin-left: 1rem;
 }
 
+
+  
 .skills-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -317,7 +319,6 @@ header {
 }
 
 .bars-box {
-    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -329,7 +330,17 @@ header {
 span {
     font-size: 1.2rem;
     font-weight: 500;
+    margin: 0;
+    margin-left: 5px;
 }
+
+.bars-box i {
+    color: var(--main-color);
+    font-size: 35px;
+    margin-left: auto; /* Move o ícone para a direita */
+}
+
+
 
 .light-bar {
     position: absolute;
