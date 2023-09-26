@@ -45,3 +45,25 @@ darkmode.onclick = () => {
 };
 
 
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.getElementById("contact-form");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault(); // Impede o envio padrão do formulário
+
+      // Coleta os dados do formulário
+      const name = form.querySelector('[name="name"]').value;
+      const email = form.querySelector('[name="email"]').value;
+      const message = form.querySelector('[name="message"]').value;
+
+      // Aqui você pode adicionar lógica para enviar os dados para um servidor ou fazer qualquer outra coisa que desejar com eles
+
+      // Exibe uma mensagem de sucesso
+      alert("Mensagem enviada com sucesso!");
+
+      // Limpa o formulário
+      form.reset();
+    });
+  });
+
