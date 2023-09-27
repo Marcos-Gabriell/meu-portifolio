@@ -431,17 +431,16 @@ body.active .percent-bar {
 .mysql-bar {
     width: 95%;
 }
-/* Estilize o container usando CSS Grid */
 .container-projeto{
+    margin-top: 200px;
     width: 80%; /* Defina a largura do container como desejado */
     margin: 0 auto; /* Centralize o container na página */
 }
 
 
-/* Estilize as divs de projeto */
 .projeto {
     display: inline-block;
-    margin: 5px;
+    margin: 10px;
     text-align: center;
     position: relative;
     overflow: hidden;
@@ -464,17 +463,18 @@ body.active .percent-bar {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.185);
     color: #fff;
-    padding: 20px;
+    padding: 0; 
     opacity: 0; 
     transition: opacity 0.3s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    backdrop-filter: blur(5px); /* Aplica um desfoque na imagem de fundo */
+    backdrop-filter: blur(5px);
 }
+
 
 .icones-tecnologia h2 {
     font-size: 15px; /* Tamanho da fonte */
@@ -485,13 +485,13 @@ body.active .percent-bar {
 }
 
 
-/* Estilize os ícones dentro de .tecnologias */
+
 .tecnologias .i {
-    font-size: 1500px; 
+    font-size: 15px; 
     margin-bottom: 10px;
 }
 
-/* Estilize o link "Ver Mais" dentro de .tecnologias */
+
 .tecnologias .github-link {
     margin-top: 10px;
     text-decoration: none;
@@ -512,11 +512,11 @@ body.active .percent-bar {
 
 .projeto:hover .tecnologias {
     opacity: 1; 
-    transition: opacity 0.3s;
+    transition: opacity 0.15s;
 }
 
 .projeto:hover img {
-    filter: blur(5px); 
+    filter: blur(1px); 
 }
 
 
