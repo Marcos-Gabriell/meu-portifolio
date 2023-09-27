@@ -450,7 +450,7 @@ body.active .percent-bar {
 
 /* Estilize as imagens dos projetos */
 .projeto img {
-    max-width: 550px;
+    max-width: 450px;
     max-height: auto;
     width: 100%;
     height: auto;
@@ -475,6 +475,15 @@ body.active .percent-bar {
     align-items: center;
     backdrop-filter: blur(5px); /* Aplica um desfoque na imagem de fundo */
 }
+
+.icones-tecnologia h2 {
+    font-size: 15px; /* Tamanho da fonte */
+    color: #fff6f6; /* Cor do texto */
+    margin-bottom: 10px; /* Espaçamento inferior */
+    text-align: center; /* Alinhamento do texto */
+    font-weight: bold; /* Peso da fonte (negrito) */
+}
+
 
 /* Estilize os ícones dentro de .tecnologias */
 .tecnologias .i {
