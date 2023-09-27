@@ -66,4 +66,3 @@ darkmode.onclick = () => {
       form.reset();
     });
   });
-
