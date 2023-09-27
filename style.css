@@ -340,6 +340,9 @@ span {
     margin-left: auto; /* Move o ícone para a direita */
 }
 
+body.active  .bars-box i  {
+    color: var(--bg-color);
+}
 
 
 .light-bar {
