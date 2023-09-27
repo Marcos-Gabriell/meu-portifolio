@@ -439,9 +439,6 @@ body.active .percent-bar {
 
 
 /* Estilize as divs de projeto */
-/* Estilize as divs de projeto */
-/* Estilize as divs de projeto */
-/* Estilize as divs de projeto */
 .projeto {
     display: inline-block;
     margin: 5px;
@@ -457,28 +454,37 @@ body.active .percent-bar {
     max-height: auto;
     width: 100%;
     height: auto;
-    transition: transform 0.3s;
+    transition: transform 0.3s, filter 0.3s; /* Adicione uma transição para o filtro */
 }
 
 /* Estilize a div de tecnologias */
 .tecnologias {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    text-align: center;
-    background-color: rgb(83, 83, 83);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
     color: #fff;
     padding: 20px;
     opacity: 0; 
     transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px); /* Aplica um desfoque na imagem de fundo */
 }
 
 /* Estilize os ícones dentro de .tecnologias */
 .tecnologias .i {
-    margin-right: 10px;
+    font-size: 1500px; 
+    margin-bottom: 10px;
 }
 
 /* Estilize o link "Ver Mais" dentro de .tecnologias */
 .tecnologias .github-link {
-    display: inline-block;
+    margin-top: 10px;
     text-decoration: none;
     padding: 5px 30px;
     background-color: #007bff;
@@ -489,13 +495,20 @@ body.active .percent-bar {
     transition: background-color 0.1s;
 }
 
-/* Estilize o efeito de hover para o botão e a barra */
-.projeto:hover .tecnologias {
-    opacity: 1; /* Torna a barra visível quando o mouse passa sobre o projeto */
-    transition: opacity 0.3s;
+.tecnologias .github-link:hover {
+    background-color: #fff;
+    color: black;
 }
 
 
+.projeto:hover .tecnologias {
+    opacity: 1; 
+    transition: opacity 0.3s;
+}
+
+.projeto:hover img {
+    filter: blur(5px); 
+}
 
 
 
