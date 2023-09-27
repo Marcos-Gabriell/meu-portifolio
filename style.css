@@ -431,6 +431,74 @@ body.active .percent-bar {
 .mysql-bar {
     width: 95%;
 }
+/* Estilize o container usando CSS Grid */
+.container-projeto{
+    width: 80%; /* Defina a largura do container como desejado */
+    margin: 0 auto; /* Centralize o container na página */
+}
+
+
+/* Estilize as divs de projeto */
+/* Estilize as divs de projeto */
+/* Estilize as divs de projeto */
+/* Estilize as divs de projeto */
+.projeto {
+    display: inline-block;
+    margin: 5px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Estilize as imagens dos projetos */
+.projeto img {
+    max-width: 550px;
+    max-height: auto;
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+/* Estilize a div de tecnologias */
+.tecnologias {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(83, 83, 83);
+    color: #fff;
+    padding: 20px;
+    opacity: 0; 
+    transition: opacity 0.3s;
+}
+
+/* Estilize os ícones dentro de .tecnologias */
+.tecnologias .i {
+    margin-right: 10px;
+}
+
+/* Estilize o link "Ver Mais" dentro de .tecnologias */
+.tecnologias .github-link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.1s;
+}
+
+/* Estilize o efeito de hover para o botão e a barra */
+.projeto:hover .tecnologias {
+    opacity: 1; /* Torna a barra visível quando o mouse passa sobre o projeto */
+    transition: opacity 0.3s;
+}
+
+
+
+
+
 
 .services-container {
     display: grid;
