@@ -467,7 +467,7 @@ body.active .percent-bar {
     color: #fff;
     padding: 0; 
     opacity: 0; 
-    transition: opacity 0.3s;
+    transition: opacity 0.300s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -481,7 +481,8 @@ body.active .percent-bar {
     color: #fff6f6; /* Cor do texto */
     margin-bottom: 10px; /* Espaçamento inferior */
     text-align: center; /* Alinhamento do texto */
-    font-weight: bold; /* Peso da fonte (negrito) */
+    font-weight: bold; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 
