@@ -1,23 +1,21 @@
 # Portfólio Pessoal
-![Portifólio ](https://github.com/Marcos-Gabriell/Portif-lio-/blob/main/img/projec.png)
-Este é um portfólio pessoal que criei para falar um pouco sobre mim, quem sou eu, meus serviços, meus projetos e meu contato.
 
+![Portfólio](https://github.com/Marcos-Gabriell/Portif-lio-/blob/main/img/projec.png)
 
-
+Bem-vindo ao meu portfólio pessoal, onde você pode conhecer um pouco mais sobre mim, meus serviços, meus projetos e como entrar em contato comigo.
 
 ## Tecnologias Utilizadas
 
-Neste portfólio, utilizei as seguintes tecnologias:
+Neste projeto, utilizei as seguintes tecnologias:
 
 - HTML
 - CSS
 - JavaScript
 
-## Como Executar os Projetos Localmente
+## Acesse o Projeto
 
-Se você deseja executar meus projetos em seu próprio ambiente de desenvolvimento, siga estas etapas:
+Você pode visualizar meu portfólio completo acessando o seguinte link: [Portfólio Marcos Gabriel](https://marcosgabriel.vercel.app/)
 
-1. Clone o repositório do projeto desejado:
+Sinta-se à vontade para explorar e conhecer mais sobre meu trabalho. Se você tiver alguma dúvida ou quiser entrar em contato, não hesite em me enviar uma mensagem através das informações de contato disponíveis no site.
 
-   ```bash
-   git clone https://github.com/seuusuario/seuprojeto.git
+Obrigado por visitar meu portfólio!
