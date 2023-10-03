@@ -1,6 +1,7 @@
 # Portfólio Pessoal
+![Portifólio ](https://github.com/Marcos-Gabriell/Portif-lio-/blob/main/img/projec.png)
+Este é um portfólio pessoal que criei para falar um pouco sobre mim, quem sou eu, meus serviços, meus projetos e meu contato.
 
-Bem-vindo ao meu código-fonte do meu portfólio pessoal! Neste repositório, vou apresentar alguns sobre mim e os projetos que desenvolvi.
 
 
 
