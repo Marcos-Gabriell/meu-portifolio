@@ -31,16 +31,19 @@ window.onscroll = () => {
 };
 
 // Dark Mode / light mode (seu código JavaScript atual permanece o mesmo aqui)
-let darkmode = document.querySelector("#darkmode");
 darkmode.onclick = () => {
-  if (darkmode.classList.contains("bx-moon")) {
-    darkmode.classList.replace("bx-moon", "bx-sun");
-    document.body.classList.add("active");
-    header.classList.add("dark-header");
-  } else {
-    darkmode.classList.replace("bx-sun", "bx-moon");
+  const darkModeIcon = document.querySelector("#dark-mode-icon");
+
+  if (document.body.classList.contains("active")) {
     document.body.classList.remove("active");
     header.classList.remove("dark-header");
+    darkModeIcon.classList.remove("fas", "fa-sun");
+    darkModeIcon.classList.add("fas", "fa-moon");
+  } else {
+    document.body.classList.add("active");
+    header.classList.add("dark-header");
+    darkModeIcon.classList.remove("fas", "fa-moon");
+    darkModeIcon.classList.add("fas", "fa-sun");
   }
 };
 
