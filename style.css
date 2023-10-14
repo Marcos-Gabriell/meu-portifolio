@@ -585,7 +585,7 @@ body.active .services-box:hover h3 {
 
 .services-box .bx {
     padding-top: 2rem;
-    font-size: 54px;
+    font-size: 44px;
     color: var(--main-color);
 }
 body.active .services-box .bx {
