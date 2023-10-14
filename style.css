@@ -95,8 +95,7 @@ header {
     transform: translateX(0); /* Quando a classe 'active' é adicionada, traga o menu da direita para o centro */
   }
   
-  
-
+ 
 .navbar a {
     font-size: 1rem;
     padding: 10px 20px;
@@ -107,6 +106,8 @@ header {
 .navbar a:hover {
     color: var(--hover);
 }
+
+
 
 #menu-icon {
     font-size: 24px;
