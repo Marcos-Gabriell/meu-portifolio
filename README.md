@@ -2,7 +2,7 @@
 
 ![Portfólio](https://github.com/Marcos-Gabriell/Portif-lio-/blob/main/img/projec.png)
 
-Bem-vindo ao meu portfólio pessoal, onde você pode conhecer um pouco mais sobre mim, meus serviços, meus projetos e como entrar em contato comigo.
+Bem-vindo ao meu portfólio pessoal, onde você pode conhecer um pouco mais sobre mim, minhas habilidade, meus serviços, meus projetos e como entrar em contato comigo.
 
 ## Tecnologias Utilizadas
 
