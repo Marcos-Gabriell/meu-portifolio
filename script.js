@@ -10,14 +10,16 @@ menu.addEventListener("click", () => {
   toggleMenuIcon();
 });
 function toggleMenuIcon() {
-  if (menu.classList.contains("bx-menu")) {
-    menu.classList.remove("bx-menu");
-    menu.classList.add("bx-x");
+  const menuIcon = document.querySelector("#menu-icon");
+  if (menuIcon.classList.contains("fa-bars")) {
+    menuIcon.classList.remove("fa-bars");
+    menuIcon.classList.add("fa-x");
   } else {
-    menu.classList.remove("bx-x");
-    menu.classList.add("bx-menu");
+    menuIcon.classList.remove("fa-x");
+    menuIcon.classList.add("fa-bars");
   }
 }
+
 
 window.addEventListener("scroll", () => {
   header.classList.toggle("shadow", window.scrollY > 0);
