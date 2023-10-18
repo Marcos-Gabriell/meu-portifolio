@@ -712,7 +712,11 @@ body.active form textarea::placeholder {
 }
 
 .copyright a {
-    color: #ffffff;
+    color: #fff;
+}
+
+.copyright a:hover  {
+    color: var(--text-color);
 }
 
 @media (max-width: 991px) {
