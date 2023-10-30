@@ -450,12 +450,13 @@ body.active .percent-bar {
 
 /* Estilize as imagens dos projetos */
 .projeto img {
-    max-width: 450px;
-    max-height: auto;
-    width: 100%;
+    max-width: 450px; /* Aumente o valor da largura máxima */
     height: auto;
-    transition: transform 0.3s, filter 0.3s; /* Adicione uma transição para o filtro */
+    width: 100%;
+    transition: transform 0.3s, filter 0.3s;
 }
+
+
 
 /* Estilize a div de tecnologias */
 .tecnologias {
