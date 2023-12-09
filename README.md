@@ -12,7 +12,6 @@
 
 Bem-vindo ao meu portfólio pessoal, onde você pode conhecer um pouco mais sobre mim, minhas habilidade, meus serviços, meus projetos e como entrar em contato comigo.
 
-
 ## Acesse o Projeto
 
 Você pode visualizar meu portfólio completo acessando o seguinte link: [Portfólio Marcos Gabriel](https://marcosgabriel.vercel.app/)
