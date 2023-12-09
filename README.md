@@ -8,7 +8,6 @@
     <img align="center" alt="vscode" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
 </div><br/>
 
-
 ![Portfólio](https://github.com/Marcos-Gabriell/Portif-lio-/blob/main/img/projec.png)
 
 Bem-vindo ao meu portfólio pessoal, onde você pode conhecer um pouco mais sobre mim, minhas habilidade, meus serviços, meus projetos e como entrar em contato comigo.
