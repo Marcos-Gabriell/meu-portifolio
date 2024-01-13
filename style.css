@@ -850,7 +850,6 @@ body.active form textarea::placeholder {
     bottom: 14px;
     right: 24px;
     z-index: 99;
-    text-decoration: none; /* Adicione esta linha para remover a sublinhado padrão de links */
   }
   
   .btn-whatsapp img {
@@ -862,7 +861,29 @@ body.active form textarea::placeholder {
     transform: scale(1.1);
   }
   
-  .tooltip-text {
-    /* Adicione estilos para o texto de dica aqui, se necessário */
+  .btn-whatsapp .tooltip-text {
+    visibility: hidden;
+    position: absolute;
+    width: 120px; /* Ajuste o valor para tornar o tooltip mais curto */
+    top: 1px;
+    left: -144px;
+    padding: 8px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #232224;
+    color: #FFF;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .btn-whatsapp:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .btn-whatsapp img {
+      max-width: 64px;
+    }
   }
   
