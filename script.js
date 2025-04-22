@@ -1,6 +1,7 @@
-AOS.init();
-
 document.addEventListener("DOMContentLoaded", function () {
+    // Inicialização do AOS (Animate On Scroll)
+    AOS.init();
+
     const header = document.querySelector("header");
     const menu = document.querySelector("#menu-icon");
     const navbar = document.querySelector(".navbar");
@@ -33,26 +34,26 @@ document.addEventListener("DOMContentLoaded", function () {
         header.classList.toggle("shadow", window.scrollY > 0);
     };
 
-   // Dark Mode / Light Mode com armazenamento da preferência
-function toggleDarkMode() {
-  document.body.classList.toggle("light-mode");
-  const isLightMode = document.body.classList.contains("light-mode");
-  localStorage.setItem("theme", isLightMode ? "light" : "dark");
+    // Dark Mode / Light Mode com armazenamento da preferência
+    function toggleDarkMode() {
+        document.body.classList.toggle("light-mode");
+        const isLightMode = document.body.classList.contains("light-mode");
+        localStorage.setItem("theme", isLightMode ? "light" : "dark");
 
-  // Alterar o emoji do botão
-  darkmode.innerText = isLightMode ? "🌙" : "🌞";
-}
+        // Alterar o emoji do botão
+        darkmode.innerText = isLightMode ? "🌙" : "🌞";
+    }
 
-// Verificar e aplicar o tema salvo ao carregar a página
-if (localStorage.getItem("theme") === "light") {
-  document.body.classList.add("light-mode");
-  darkmode.innerText = "🌙"; // Define a lua no modo claro
-} else {
-  darkmode.innerText = "🌞"; // Define o sol no modo escuro
-}
+    // Verificar e aplicar o tema salvo ao carregar a página
+    if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-mode");
+        darkmode.innerText = "🌙"; // Define a lua no modo claro
+    } else {
+        darkmode.innerText = "🌞"; // Define o sol no modo escuro
+    }
 
-// Evento de clique no botão do Dark Mode
-darkmode.addEventListener("click", toggleDarkMode);
+    // Evento de clique no botão do Dark Mode
+    darkmode.addEventListener("click", toggleDarkMode);
 
     // Formulário de contato
     if (form) {
@@ -64,17 +65,43 @@ darkmode.addEventListener("click", toggleDarkMode);
             const email = form.querySelector('[name="email"]').value;
             const message = form.querySelector('[name="message"]').value;
 
+            // Verifica se os campos estão preenchidos
+            if (!name || !email || !message) {
+                alert("Todos os campos são obrigatórios!");
+                return;
+            }
+
             // Exibe mensagem de sucesso
             alert("Mensagem enviada com sucesso!");
+
+            // Envia os dados para a API (sua backend)
+            fetch('https://envio-de-email-portifolio.onrender.com/send-email', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    nome: name,
+                    email: email,
+                    mensagem: message
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log('Email enviado com sucesso!', data);
+            })
+            .catch((error) => {
+                console.error('Erro ao enviar email:', error);
+            });
 
             // Limpa o formulário
             form.reset();
         });
     }
-});
 
-// Função para exibir ou ocultar detalhes
-function mostrarDetalhes(id) {
-    const detalhes = document.getElementById(id);
-    detalhes.style.display = detalhes.style.display === "block" ? "none" : "block";
-}
+    // Função para exibir ou ocultar detalhes
+    function mostrarDetalhes(id) {
+        const detalhes = document.getElementById(id);
+        detalhes.style.display = detalhes.style.display === "block" ? "none" : "block";
+    }
+});
