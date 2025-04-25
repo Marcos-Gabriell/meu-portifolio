@@ -80,7 +80,7 @@ header {
     justify-content: space-between;
     background: var(--bg-color);
     padding: 13px 10%;
-    transition: 0.2s;
+    transition: top 0.3s ease, background 0.2s;
     box-shadow: -3px -3px 7px #ffffff73, 2px 2px 5px rgba(94, 104, 121, 0.288);
 }
 

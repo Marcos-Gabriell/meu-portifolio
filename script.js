@@ -25,14 +25,30 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Fechar menu ao rolar a página
-    window.onscroll = () => {
+    // Variável para controle do scroll anterior
+    let prevScrollPos = window.pageYOffset;
+
+    window.addEventListener("scroll", () => {
+        const currentScrollPos = window.pageYOffset;
+
+        // Mostrar ou esconder o header conforme a direção do scroll
+        if (prevScrollPos > currentScrollPos) {
+            header.style.top = "0";
+        } else {
+            header.style.top = "-100px";
+        }
+
+        prevScrollPos = currentScrollPos;
+
+        // Adiciona sombra ao header quando a página é rolada
+        header.classList.toggle("shadow", window.scrollY > 0);
+
+        // Fechar menu se estiver aberto
         if (navbar.classList.contains("active")) {
             navbar.classList.remove("active");
             toggleMenuIcon();
         }
-        header.classList.toggle("shadow", window.scrollY > 0);
-    };
+    });
 
     // Dark Mode / Light Mode com armazenamento da preferência
     function toggleDarkMode() {
