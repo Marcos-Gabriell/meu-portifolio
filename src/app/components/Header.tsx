@@ -1,31 +1,35 @@
+import Image from "next/image";
+
 export default function Header() {
   return (
     <section className="flex flex-col items-center justify-center text-center gap-6 py-24 bg-black">
-      
-<div className="relative">
-  <div
-    className="w-[200px] h-[200px] rounded-full p-[3px] hover:shadow-[0_0_40px_#0038A8] transition duration-300 md:w-[300px] md:h-[300px]"
-    style={{
-      background:
-        'conic-gradient(at top left, #7B00FF  0%, #0038A8 15%, #FF00C8 28%, #0038A8 35%, #0038A8 100%)',
-    }}
-  >
-    <div className="w-full h-full rounded-full bg-black overflow-hidden">
-      <img
-        src="img.PNG"
-        alt="Foto de perfil de Marcos Gabriel"
-        className="w-full h-full object-cover rounded-full"
-      />
-    </div>
-  </div>
-</div>
+      <div className="relative w-[200px] h-[200px] rounded-full p-[3px] hover:shadow-[0_0_40px_#0038A8] transition duration-300 md:w-[300px] md:h-[300px]" style={{
+          background: 'conic-gradient(at top left, #7B00FF  0%, #0038A8 15%, #FF00C8 28%, #0038A8 35%, #0038A8 100%)'
+        }}>
+        <div className="w-full h-full rounded-full bg-black overflow-hidden relative">
+          <Image
+            src="/img.PNG"
+            alt="Foto de perfil de Marcos Gabriel"
+            layout="fill"
+            objectFit="cover"
+            className="rounded-full"
+            priority={true}
+          />
+        </div>
+      </div>
 
-      <h1 className="text-4xl md:text-5xl font-extrabold text-white mt-4">Marcos Gabriel</h1>
-      <h2 className="text-lg font-medium text-[#cbd5e1] -mt-2">Desenvolvedor Full-Stack</h2>
+      <h1 className="text-4xl md:text-5xl font-extrabold text-white mt-4">
+        Marcos Gabriel
+      </h1>
+      <h2 className="text-lg font-medium text-[#cbd5e1] -mt-2">
+        Desenvolvedor Full-Stack
+      </h2>
 
       <p className="max-w-2xl text-gray-400 px-4 leading-relaxed text-center">
-        Sou desenvolvedor Full Stack focado em desenvolvimento web com Java, Spring Boot e Angular, criando aplicações robustas, escaláveis e seguras.
-        Tenho experiência prática em arquitetura de software, boas práticas e trabalho em equipe para entregar soluções de alta qualidade.
+        Sou desenvolvedor Full Stack focado em desenvolvimento web com Java,
+        Spring Boot e Angular, criando aplicações robustas, escaláveis e
+        seguras. Tenho experiência prática em arquitetura de software, boas
+        práticas e trabalho em equipe para entregar soluções de alta qualidade.
       </p>
 
       <a

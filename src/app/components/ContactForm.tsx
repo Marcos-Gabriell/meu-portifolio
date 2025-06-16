@@ -115,9 +115,14 @@ export default function ContactForm() {
       setSuccessMsg("Mensagem enviada com sucesso!");
       setForm({ nome: "", email: "", telefone: "", mensagem: "" });
       setErrors({});
-    } catch (error: any) {
-      setApiError(error.message || "Erro inesperado.");
-    } finally {
+    } catch (error: unknown) {
+      if (error instanceof Error) {
+      setApiError(error.message);
+      } else {
+      setApiError("Erro inesperado.");
+     }
+  }
+ finally {
       setLoading(false);
     }
   }

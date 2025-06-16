@@ -1,4 +1,5 @@
 'use client';
+
 import { useEffect, useState } from 'react';
 
 const USERNAME = 'Marcos-Gabriell';
@@ -15,18 +16,25 @@ const destaques = [
   'api-rest-my-first'
 ];
 
+type Repo = {
+  id: number;
+  name: string;
+  description: string | null;
+  html_url: string;
+};
+
 export default function Projects() {
-  const [repos, setRepos] = useState<any[]>([]);
+  const [repos, setRepos] = useState<Repo[]>([]);
 
   useEffect(() => {
     async function fetchRepos() {
       const results = await Promise.all(
         destaques.map(async (repo) => {
           const res = await fetch(`https://api.github.com/repos/${USERNAME}/${repo}`);
-          return res.ok ? await res.json() : null;
+          return res.ok ? (await res.json()) as Repo : null;
         })
       );
-      setRepos(results.filter(Boolean));
+      setRepos(results.filter((r): r is Repo => r !== null));
     }
 
     fetchRepos();
@@ -36,7 +44,6 @@ export default function Projects() {
     <section className="py-10 px-4 max-w-6xl mx-auto">
       <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-white text-center">Projetos</h2>
 
-      {/* Grid responsiva */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {repos.map((repo) => (
           <div key={repo.id} className="bg-zinc-900 p-6 rounded-lg">
